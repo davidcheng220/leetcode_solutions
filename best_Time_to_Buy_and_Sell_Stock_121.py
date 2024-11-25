@@ -1,5 +1,5 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list) -> int:
         buy = prices[0]
         profit = 0
         for current_day in range(len(prices)):
@@ -14,4 +14,10 @@ class Solution:
         #     else:
         #         profit = max(profit, prices[current_day] - buy)
         return profit
+
+# test code
+profit = Solution()
+
+day_price = [7,6,4,3,2,1]
+print(profit.maxProfit(day_price))
 
